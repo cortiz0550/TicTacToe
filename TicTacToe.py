@@ -15,11 +15,14 @@ def printBoard(board):
 
 #Deal with input that doesn't work with the program
 def checkInput(inp):
+
 	while True:
-		if inp.isdecimal():
+		space = theBoard.get(inp)
+
+		if space:
 			break
 
-		inp = input("Enter a number" )
+		inp = input("Enter a number ")
 
 	while True:
 		if theBoard[inp].isspace():
@@ -73,6 +76,7 @@ for i in range(9):
 	print("bool" + str(win))
 
 	if(win):
+		os.system('clear')
 		print("Congrats!, Player " + turn + " won!")
 		break
 	
@@ -81,5 +85,5 @@ for i in range(9):
 	else:
 		turn = 'X'
 
-os.system('clear')
+
 printBoard(theBoard)
