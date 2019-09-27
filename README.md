@@ -1,0 +1,1 @@
+Here is a simple Tic Tac Toe game in the command line that I made inspired by the one in Automate the Boring stuff by Al Sweigart. I wanted to keep the dictionary data structure, but I am sure an array would be better. I'll fix that at a later time.
